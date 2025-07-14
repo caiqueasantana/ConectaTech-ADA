@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto ConectaTech ADA - Desenvolvimento Embarcado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Cole TODO o CSS da sua index.html aqui para manter a consistência visual */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --accent-color: #28a745;
+            --background-light: #f8f9fa;
+            --text-dark: #343a40;
+            --text-light: #ffffff;
+            --card-bg: #ffffff;
+            --shadow-light: rgba(0, 0, 0, 0.1);
+            --header-bg: #2c3e50;
+            --nav-bg: #34495e;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px var(--shadow-light);
+        }
+
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: var(--nav-bg);
+            box-shadow: 0 2px 5px var(--shadow-light);
+            padding: 0.7rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: 600;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--shadow-light);
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6rem;
+            color: var(--text-dark);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .code-block {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .code-block pre {
+            margin: 0;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+            color: #495057;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px var(--shadow-light);
+        }
+        .image-container p {
+            font-size: 0.9em;
+            color: var(--secondary-color);
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 40px;
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 8px var(--shadow-light);
+        }
+
+        /* Responsividade básica (repetir aqui para cada página) */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Projeto ConectaTech ADA</h1>
+        <p>Documentação Completa da Monitoria Voluntária FATEC Carapicuíba</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre o Projeto</a></li>
+            <li><a href="metodologia.html">Metodologia & Cronograma</a></li>
+            <li><a href="desenvolvimento_embarcado.html" class="active">Desenvolvimento Embarcado</a></li>
+            <li><a href="desenvolvimento_multiplataforma.html">Desenvolvimento Multiplataforma</a></li>
+            <li><a href="materiais_didaticos.html">Materiais Didáticos</a></li>
+            <li><a href="resultados.html">Resultados & Análise</a></li>
+            <li><a href="portfolio.html">Portfólio & Apresentações</a></li>
+            <li><a href="proximos_passos.html">Próximos Passos & Sustentabilidade</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Desenvolvimento do Módulo Embarcado</h2>
+
+        <p>O Módulo de Hardware Embarcado é o coração físico do Kit ConectaTech ADA, permitindo que os conceitos de programação se materializem em ações no mundo real. Nesta seção, detalhamos o hardware selecionado, o firmware desenvolvido e os desafios enfrentados no processo.</p>
+
+        <h3>Hardware Utilizado</h3>
+        <p>A escolha dos componentes foi guiada pelo critério de baixo custo, disponibilidade, facilidade de uso para iniciantes e capacidades adequadas para os módulos didáticos. O principal microcontrolador utilizado é o ESP32, conhecido por sua conectividade Wi-Fi e Bluetooth integradas, além de uma boa quantidade de GPIOs (General Purpose Input/Output).</p>
+        <ul>
+            <li><strong>Microcontrolador:</strong> ESP32 DevKit V1 (ou similar)
+                <ul>
+                    <li>**Justificativa:** Excelente custo-benefício, Wi-Fi e Bluetooth integrados, poder de processamento para as tarefas propostas, vasta comunidade e documentação. Sua arquitetura demonstra princípios de **Arquitetura e Organização de Computadores** que são discutidos nos módulos.</li>
+                </ul>
+            </li>
+            <li><strong>Sensores:</strong>
+                <ul>
+                    <li>**Sensor de Luminosidade (LDR):** Para demonstrações de leitura analógica e controle baseado na luz ambiente.</li>
+                    <li>**Sensor de Temperatura e Umidade (DHT11/22 - Opcional):** Para coleta de dados ambientais mais complexa.</li>
+                </ul>
+            </li>
+            <li><strong>Atuadores:</strong>
+                <ul>
+                    <li>**LEDs (diferentes cores):** Para demonstrações de saída digital e controle visual.</li>
+                    <li>**Resistores:** Componentes de proteção essenciais.</li>
+                    <li>**Protoboard e Jumpers:** Para montagem flexível dos circuitos.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Diagramas de Circuito e Montagem</h4>
+        <p>Abaixo, o diagrama básico de um dos circuitos utilizados nas oficinas. As fotos ilustram o protótipo montado em protoboard.</p>
+        <div class="image-container">
+            <img src="imagens/circuito_led_ldr_esp32.png" alt="Diagrama de circuito ESP32 com LED e LDR">
+            <p><em>Diagrama simplificado de conexão do ESP32 com LED e LDR.</em></p>
+        </div>
+        <div class="image-container">
+            <img src="imagens/prototipo_embarcado_foto.jpg" alt="Foto do protótipo do Kit ConectaTech ADA em protoboard">
+            <p><em>Protótipo inicial do módulo embarcado em protoboard.</em></p>
+        </div>
+        <div class="code-block">
+            <p><strong>Observação:</strong> Substitua `imagens/circuito_led_ldr_esp32.png` e `imagens/prototipo_embarcado_foto.jpg` pelos caminhos reais das suas imagens e diagramas.</p>
+        </div>
+
+
+        <h3>Firmware (Código)</h3>
+        <p>O firmware é o software que roda diretamente no microcontrolador ESP32, escrito principalmente em C++ utilizando o ambiente Arduino IDE. Ele é responsável por controlar os componentes, ler os sensores e gerenciar a comunicação com o módulo de software multiplataforma.</p>
+
+        <h4>Estrutura e Lógica Principal</h4>
+        <p>O firmware é estruturado para ser modular, facilitando a compreensão e a expansão. As principais lógicas implementadas são:</p>
+        <ul>
+            <li><strong>Inicialização (<code>setup()</code>):</strong> Configuração de pinos, inicialização da comunicação serial/Wi-Fi.</li>
+            <li><strong>Loop Principal (<code>loop()</code>):</strong> Leitura contínua de sensores, processamento de dados, controle de atuadores e comunicação de dados. Aplicação de **Algoritmos e Lógica de Programação** para tomada de decisões.</li>
+            <li><strong>Funções de Comunicação:</strong> Rotinas para receber comandos da plataforma multiplataforma e enviar dados dos sensores.</li>
+        </ul>
+
+        <h4>Exemplo de Código: Leitura de Sensor e Controle Básico</h4>
+        <p>Abaixo, um trecho de código que demonstra a leitura de um sensor de luminosidade (LDR) e o controle de um LED conectado ao ESP32, baseado no valor lido. Este exemplo ilustra a interconexão do hardware com a lógica programada.</p>
+        <div class="code-block">
+            <pre><code class="language-cpp">
+// Código para ESP32: Ler LDR e Controlar LED, e enviar via Serial/Wi-Fi
+#include &lt;Arduino.h&gt;
+#include &lt;WiFi.h&gt; // Se estiver usando comunicação Wi-Fi
+
+const int LED_PIN = 2;       // GPIO para o LED
+const int LDR_PIN = 34;      // GPIO para o LDR (ADC1_CH6)
+
+// Configurações de Wi-Fi (se aplicável para comunicação TCP/UDP/MQTT)
+// const char* ssid = "SEU_WIFI";
+// const char* password = "SUA_SENHA_WIFI";
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(LED_PIN, OUTPUT);
+  // pinMode(LDR_PIN, INPUT); // LDR_PIN já é input por padrão para analogRead
+
+  // Conexão Wi-Fi (se usar)
+  // WiFi.begin(ssid, password);
+  // while (WiFi.status() != WL_CONNECTED) {
+  //   delay(500);
+  //   Serial.println("Conectando ao WiFi...");
+  // }
+  // Serial.println("WiFi Conectado!");
+  // Serial.print("Endereço IP: ");
+  // Serial.println(WiFi.localIP());
+}
+
+void loop() {
+  int valorLDR = analogRead(LDR_PIN); // Lê o valor do LDR (0-4095 para ESP32)
+  
+  Serial.print("Luminosidade: ");
+  Serial.println(valorLDR); // Envia o valor via serial para o PC ou gateway
+
+  // Exemplo de lógica: Acende o LED se estiver escuro (valor LDR baixo)
+  if (valorLDR < 1500) { // Valor de threshold, ajuste conforme necessário
+    digitalWrite(LED_PIN, HIGH); // Acende o LED
+    // Serial.println("LED LIGADO (Ambiente escuro)");
+  } else {
+    digitalWrite(LED_PIN, LOW);  // Apaga o LED
+    // Serial.println("LED DESLIGADO (Ambiente claro)");
+  }
+
+  // Simula recebimento de comando da plataforma multiplataforma (via Serial)
+  if (Serial.available() > 0) {
+    String command = Serial.readStringUntil('\n');
+    command.trim(); // Remove espaços em branco
+    if (command == "LIGAR_LED") {
+      digitalWrite(LED_PIN, HIGH);
+      Serial.println("Comando: LED LIGADO");
+    } else if (command == "DESLIGAR_LED") {
+      digitalWrite(LED_PIN, LOW);
+      Serial.println("Comando: LED DESLIGADO");
+    }
+  }
+
+  delay(1000); // Espera 1 segundo antes da próxima leitura/execução
+}
+            </code></pre>
+        </div>
+
+        <h3>Desafios e Soluções</h3>
+        <p>O desenvolvimento embarcado trouxe desafios únicos, nos quais aplicamos diretamente os conhecimentos das disciplinas da FATEC:</p>
+        <ul>
+            <li><strong>Gerenciamento de Recursos:</strong> Microcontroladores possuem memória e processamento limitados. Otimizamos o código e o uso de bibliotecas, aplicando princípios de **Arquitetura e Organização de Computadores** para garantir a eficiência.</li>
+            <li><strong>Estabilidade da Comunicação:</strong> A comunicação serial e Wi-Fi entre o embarcado e a plataforma multiplataforma exigiu atenção à sincronização e tratamento de erros. A compreensão de como os **Sistemas Operacionais** subjacentes gerenciam as interrupções e as tarefas foi fundamental.</li>
+            <li><strong>Depuração de Hardware:</strong> A identificação de falhas no circuito ou na programação exigiu métodos sistemáticos de depuração, utilizando ferramentas como o monitor serial e multímetro.</li>
+        </ul>
+        <p>A superação desses desafios foi essencial para a robustez do Kit ConectaTech ADA e para o aprendizado prático em desenvolvimento de sistemas embarcados.</p>
+    </div>
+
+    <footer>
+        <p>© 2025 Projeto ConectaTech ADA - Desenvolvido por Caique dos Anjos Santana</p>
+        <p>Monitoria Espaço ADA - FATEC Carapicuíba</p>
+    </footer>
+
+</body>
+</html>

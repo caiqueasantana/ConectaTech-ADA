@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto ConectaTech ADA - Sobre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Cole TODO o CSS da sua index.html aqui para manter a consistência visual */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --accent-color: #28a745;
+            --background-light: #f8f9fa;
+            --text-dark: #343a40;
+            --text-light: #ffffff;
+            --card-bg: #ffffff;
+            --shadow-light: rgba(0, 0, 0, 0.1);
+            --header-bg: #2c3e50;
+            --nav-bg: #34495e;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px var(--shadow-light);
+        }
+
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: var(--nav-bg);
+            box-shadow: 0 2px 5px var(--shadow-light);
+            padding: 0.7rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: 600;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: var(--card-bg); /* Fundo branco para o container da página */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--shadow-light);
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6rem;
+            color: var(--text-dark);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .code-block {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            overflow-x: auto; /* Para código que excede a largura */
+        }
+        .code-block pre {
+            margin: 0;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+            color: #495057;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 40px;
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 8px var(--shadow-light);
+        }
+
+        /* Responsividade básica (repetir aqui para cada página) */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Projeto ConectaTech ADA</h1>
+        <p>Documentação Completa da Monitoria Voluntária FATEC Carapicuíba</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html" class="active">Sobre o Projeto</a></li>
+            <li><a href="metodologia.html">Metodologia & Cronograma</a></li>
+            <li><a href="desenvolvimento_embarcado.html">Desenvolvimento Embarcado</a></li>
+            <li><a href="desenvolvimento_multiplataforma.html">Desenvolvimento Multiplataforma</a></li>
+            <li><a href="materiais_didaticos.html">Materiais Didáticos</a></li>
+            <li><a href="resultados.html">Resultados & Análise</a></li>
+            <li><a href="portfolio.html">Portfólio & Apresentações</a></li>
+            <li><a href="proximos_passos.html">Próximos Passos & Sustentabilidade</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Sobre o Projeto ConectaTech ADA</h2>
+
+        <h3>Título do Projeto:</h3>
+        <p>"ConectaTech ADA": Metodologia Híbrida (Multiplataforma & Embarcados) para Iniciação em Programação e Automação Comunitária</p>
+
+        <h3>Tema:</h3>
+        <p>Inovação Pedagógica e Democratização Tecnológica através da Criação de Ferramentas Educacionais que Unem o Mundo Digital (Multiplataforma) ao Físico (Embarcados).</p>
+
+        <h3>Disciplinas do curso relacionadas ao projeto:</h3>
+        <ul>
+            <li>Algoritmos e Lógica de Programação</li>
+            <li>Arquitetura e Organização de Computadores</li>
+            <li>Linguagem de Programação</li>
+            <li>Estruturas de Dados</li>
+            <li>Sistemas Operacionais I e II</li>
+        </ul>
+
+        <h3>Objetivos:</h3>
+        <ul>
+            <li>Desenvolver e validar uma metodologia de ensino inovadora que integre <strong>Desenvolvimento de Sistemas Multiplataformas</strong> com <strong>Desenvolvimento de Sistemas Embarcados</strong> para iniciantes absolutos.</li>
+            <li>Produzir um "Kit Didático ConectaTech" Prototipo (Módulo de Software Multiplataforma e Módulo de Hardware Embarcado de Baixo Custo).</li>
+            <li>Capacitar a Comunidade de Carapicuíba através de oficinas práticas no Espaço ADA.</li>
+            <li>Gerar Material Didático e de Portfólio de Alta Qualidade, aplicando as disciplinas do curso.</li>
+        </ul>
+
+        <h3>Justificativa:</h3>
+        <p>A demanda por habilidades em Sistemas Multiplataformas e Embarcados é crescente, mas o acesso a essa educação prática é restrito. Este projeto visa preencher essa lacuna em Carapicuíba, oferecendo uma experiência de aprendizado hands-on que conecta o código na tela à ação no mundo real. Isso solidifica o aprendizado das disciplinas da FATEC e inspira os participantes, gerando um portfólio robusto e diferenciado para o monitor.</p>
+
+        <h3>Problemática:</h3>
+        <p>Como desenvolver e validar uma metodologia de ensino e um kit didático protótipo (integrando Desenvolvimento de Sistemas Multiplataformas e Sistemas Embarcados de baixo custo) que sejam eficazes e acessíveis para introduzir conceitos de programação e automação a iniciantes na comunidade de Carapicuíba?</p>
+
+        <h3>Questão de pesquisa, ensino e/ou hipóteses:</h3>
+        <ul>
+            <li><strong>Pesquisa:</strong> Qual a arquitetura mais eficiente para integrar software multiplataforma com microcontroladores de baixo custo em um kit didático educacional?</li>
+            <li><strong>Ensino:</strong> Como a criação e aplicação de um kit híbrido (software/hardware) aprofunda a compreensão de Algoritmos, Estruturas de Dados, Arquitetura de Computadores e Sistemas Operacionais?</li>
+            <li><strong>Hipótese:</strong> A metodologia "ConectaTech ADA" aumentará o engajamento e a proficiência em programação e automação para iniciantes na comunidade de Carapicuíba.</li>
+        </ul>
+        <h3>Entregável da pesquisa:</h3>
+        <ul>
+            <li><strong>Protótipo Funcional:</strong> Kit didático "ConectaTech" (software multiplataforma e hardware embarcado).</li>
+            <li><strong>Metodologia de Ensino:</strong> Roteiros e planos de aula.</li>
+            <li><strong>Relatório Técnico-Pedagógico Completo.</strong></li>
+            <li><strong>Plano de Sustentabilidade e Expansão.</strong></li>
+            <li><strong>Portfólio de Alta Relevância.</strong></li>
+        </ul>
+        <div class="code-block">
+            <p><strong>Observação:</strong> Esta seção pode ser expandida com mais detalhes sobre cada item do projeto. Adicione imagens, diagramas e outros recursos visuais conforme necessário.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Projeto ConectaTech ADA - Desenvolvido por Caique dos Anjos Santana</p>
+        <p>Monitoria Espaço ADA - FATEC Carapicuíba</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto ConectaTech ADA - Desenvolvimento Multiplataforma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Cole TODO o CSS da sua index.html aqui para manter a consistência visual */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --accent-color: #28a745;
+            --background-light: #f8f9fa;
+            --text-dark: #343a40;
+            --text-light: #ffffff;
+            --card-bg: #ffffff;
+            --shadow-light: rgba(0, 0, 0, 0.1);
+            --header-bg: #2c3e50;
+            --nav-bg: #34495e;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px var(--shadow-light);
+        }
+
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: var(--nav-bg);
+            box-shadow: 0 2px 5px var(--shadow-light);
+            padding: 0.7rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: 600;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--shadow-light);
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6rem;
+            color: var(--text-dark);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .code-block {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .code-block pre {
+            margin: 0;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+            color: #495057;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px var(--shadow-light);
+        }
+        .image-container p {
+            font-size: 0.9em;
+            color: var(--secondary-color);
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 40px;
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 8px var(--shadow-light);
+        }
+
+        /* Responsividade básica (repetir aqui para cada página) */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Projeto ConectaTech ADA</h1>
+        <p>Documentação Completa da Monitoria Voluntária FATEC Carapicuíba</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre o Projeto</a></li>
+            <li><a href="metodologia.html">Metodologia & Cronograma</a></li>
+            <li><a href="desenvolvimento_embarcado.html">Desenvolvimento Embarcado</a></li>
+            <li><a href="desenvolvimento_multiplataforma.html" class="active">Desenvolvimento Multiplataforma</a></li>
+            <li><a href="materiais_didaticos.html">Materiais Didáticos</a></li>
+            <li><a href="resultados.html">Resultados & Análise</a></li>
+            <li><a href="portfolio.html">Portfólio & Apresentações</a></li>
+            <li><a href="proximos_passos.html">Próximos Passos & Sustentabilidade</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Desenvolvimento do Módulo Multiplataforma</h2>
+
+        <p>O Módulo de Software Multiplataforma é a interface amigável do Kit ConectaTech ADA, permitindo que os usuários (alunos e comunidade) interajam de forma intuitiva com a lógica de programação e controlem o módulo embarcado. Esta seção detalha as tecnologias utilizadas, a arquitetura do software e as funcionalidades implementadas.</p>
+
+        <h3>Tecnologias Utilizadas</h3>
+        <p>Para garantir acessibilidade e facilidade de aprendizado, a escolha das tecnologias focou em soluções que permitissem o desenvolvimento multiplataforma com um bom balanço entre simplicidade e capacidade. Optamos por:</p>
+        <ul>
+            <li><strong>Linguagem de Programação Principal:</strong> Python
+                <ul>
+                    <li>**Justificativa:** Sua sintaxe clara e legibilidade a tornam ideal para iniciantes em programação. Possui bibliotecas robustas para interface gráfica (Tkinter) e comunicação serial/rede.</li>
+                </ul>
+            </li>
+            <li><strong>Framework/Biblioteca de Interface Gráfica:</strong> Tkinter (para aplicação desktop)
+                <ul>
+                    <li>**Justificativa:** Integrado ao Python, não exige instalação adicional complexa, facilitando o uso em diversos computadores da FATEC e da comunidade. É multiplataforma por natureza (Windows, macOS, Linux).</li>
+                </ul>
+            </li>
+            <li><strong>Comunicação com o Embarcado:</strong> PySerial (para comunicação serial via USB) ou WebSockets/MQTT (para comunicação Wi-Fi)
+                <ul>
+                    <li>**Justificativa:** Fornecem métodos eficientes e confiáveis para o software interagir com o microcontrolador ESP32.</li>
+                </ul>
+            </li>
+            <li><strong>Estruturas de Dados:</strong> Listas, Dicionários e Filas em Python para gerenciamento de comandos, logs e dados de sensores.</li>
+        </ul>
+
+        <h3>Arquitetura do Software e UI/UX</h3>
+        <p>A arquitetura do módulo multiplataforma foi desenhada para ser modular e extensível, com foco na usabilidade (UX) e em uma interface visual clara (UI) para o público iniciante.</p>
+        <ul>
+            <li><strong>Arquitetura de Camadas:</strong> O software é dividido em camadas (Interface de Usuário, Lógica de Negócio/Processamento, Camada de Comunicação com Hardware) para melhor organização e manutenção.</li>
+            <li><strong>Interface de Usuário (UI):</strong>
+                <ul>
+                    <li>**Ambiente de Programação Visual:** Um editor de texto simplificado ou um sistema de "blocos" (se implementado) onde o usuário escreve/monta seus **Algoritmos**.</li>
+                    <li>**Painel de Controle:** Botões para enviar comandos (ex: ligar/desligar LED) e áreas para exibir dados recebidos do hardware (ex: valor de luminosidade).</li>
+                    <li>**Logs de Comunicação:** Uma área para exibir a troca de mensagens entre o software e o hardware, facilitando a depuração e o entendimento.</li>
+                </ul>
+            </li>
+            <li><strong>Experiência do Usuário (UX):</strong> Priorizamos a simplicidade, com feedback visual claro (ex: botão muda de cor ao clicar), mensagens de erro amigáveis e um fluxo de trabalho intuitivo para cada desafio didático.</li>
+        </ul>
+        <div class="image-container">
+            <img src="imagens/ui_mockup_software.png" alt="Mockup da interface do software ConectaTech ADA">
+            <p><em>Mockup da interface do Módulo de Software Multiplataforma.</em></p>
+        </div>
+        <div class="code-block">
+            <p><strong>Observação:</strong> Substitua `imagens/ui_mockup_software.png` pela imagem real do mockup ou captura de tela da sua interface.</p>
+        </div>
+
+        <h3>Código (Exemplos de Implementação)</h3>
+        <p>Apresentamos abaixo trechos de código-fonte que ilustram a implementação das principais funcionalidades do módulo multiplataforma, demonstrando a aplicação de **Algoritmos e Lógica de Programação**, **Estruturas de Dados** e comunicação com o hardware.</p>
+
+        <h4>Exemplo de Código: Interface e Comunicação (Python + Tkinter + PySerial)</h4>
+        <p>Este snippet demonstra a criação de uma janela simples com um botão para controlar um LED no módulo embarcado e um label para exibir dados de sensores via comunicação serial.</p>
+        <div class="code-block">
+            <pre><code class="language-python">
+# Exemplo de Módulo Multiplataforma (Python + Tkinter + PySerial)
+import tkinter as tk
+from tkinter import ttk
+import serial.tools.list_ports # Para listar portas seriais disponíveis
+
+# --- Configuração da Comunicação Serial ---
+# Defina a porta serial e baud rate (deve corresponder ao ESP32)
+SERIAL_PORT = 'COM3' # Altere para a porta correta do seu ESP32 (ex: '/dev/ttyUSB0' no Linux)
+BAUD_RATE = 115200
+
+ser = None # Objeto serial global
+
+def connect_serial():
+    global ser
+    try:
+        ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)
+        status_label.config(text=f"Status: Conectado a {SERIAL_PORT}", foreground="green")
+        read_serial_data() # Inicia a leitura contínua
+    except serial.SerialException as e:
+        status_label.config(text=f"Status: Erro de Conexão ({e})", foreground="red")
+        print(f"Erro ao conectar: {e}")
+
+def disconnect_serial():
+    global ser
+    if ser and ser.is_open:
+        ser.close()
+        status_label.config(text="Status: Desconectado", foreground="orange")
+        print("Porta serial desconectada.")
+
+def send_command_to_esp32(command):
+    if ser and ser.is_open:
+        ser.write(command.encode('utf-8'))
+        print(f"Comando enviado: {command.strip()}")
+    else:
+        print("Erro: Porta serial não conectada.")
+
+def toggle_led_on_esp32():
+    if led_button["text"] == "Ligar LED":
+        send_command_to_esp32("LIGAR_LED\n")
+        led_button.config(text="Desligar LED", style="Accent.TButton")
+    else:
+        send_command_to_esp32("DESLIGAR_LED\n")
+        led_button.config(text="Ligar LED", style="TButton")
+
+def read_serial_data():
+    global ser
+    if ser and ser.is_open and ser.in_waiting > 0:
+        try:
+            line = ser.readline().decode('utf-8').strip()
+            if line:
+                # Exemplo de tratamento de dados: "Luminosidade: 850"
+                if "Luminosidade:" in line:
+                    luminosity_value = line.split(":")[1].strip()
+                    luminosity_label.config(text=f"Luminosidade: {luminosity_value}")
+                # Adicione mais parsers para outros tipos de dados ou comandos do ESP32
+                print(f"Recebido: {line}")
+            root.after(100, read_serial_data) # Chama a função novamente
+        except Exception as e:
+            print(f"Erro na leitura serial: {e}")
+            root.after(100, read_serial_data)
+    else:
+        root.after(100, read_serial_data) # Continua tentando ler mesmo se não tiver dados
+
+# --- Configuração da Interface Gráfica (Tkinter) ---
+root = tk.Tk()
+root.title("ConectaTech ADA - Controle")
+root.geometry("400x300")
+root.resizable(False, False)
+
+# Estilos (para deixar mais bonito)
+style = ttk.Style()
+style.theme_use('clam') # 'clam' ou 'alt' ou 'default'
+style.configure("TButton", padding=6, relief="flat", background=var(--secondary-color), foreground=var(--text-light))
+style.map("TButton",
+          background=[('active', var(--secondary-color))],
+          foreground=[('active', var(--text-light))])
+
+style.configure("Accent.TButton", background=var(--accent-color), foreground=var(--text-light))
+style.map("Accent.TButton",
+          background=[('active', '#218838')])
+
+
+main_frame = ttk.Frame(root, padding="20")
+main_frame.pack(fill=tk.BOTH, expand=True)
+
+# Controles de Conexão
+conn_frame = ttk.LabelFrame(main_frame, text="Conexão Serial", padding="10")
+conn_frame.pack(pady=10, fill=tk.X)
+
+port_label = ttk.Label(conn_frame, text="Porta:")
+port_label.grid(row=0, column=0, padx=5, pady=5)
+
+# Lista de portas disponíveis (dinâmica)
+ports = [p.device for p in serial.tools.list_ports.comports()]
+selected_port = tk.StringVar(root)
+if ports:
+    selected_port.set(ports[0]) # Seleciona a primeira porta por padrão
+    SERIAL_PORT = ports[0]
+else:
+    selected_port.set("Nenhuma porta encontrada")
+
+port_dropdown = ttk.OptionMenu(conn_frame, selected_port, *ports, command=lambda port: globals().update(SERIAL_PORT=port))
+port_dropdown.grid(row=0, column=1, padx=5, pady=5, sticky=tk.W+tk.E)
+
+connect_button = ttk.Button(conn_frame, text="Conectar", command=connect_serial)
+connect_button.grid(row=0, column=2, padx=5, pady=5)
+
+disconnect_button = ttk.Button(conn_frame, text="Desconectar", command=disconnect_serial)
+disconnect_button.grid(row=0, column=3, padx=5, pady=5)
+
+status_label = ttk.Label(conn_frame, text="Status: Desconectado", foreground="orange")
+status_label.grid(row=1, column=0, columnspan=4, pady=5)
+
+
+# Controles do Kit
+kit_frame = ttk.LabelFrame(main_frame, text="Controle do Kit", padding="10")
+kit_frame.pack(pady=10, fill=tk.X)
+
+led_button = ttk.Button(kit_frame, text="Ligar LED", command=toggle_led_on_esp32)
+led_button.pack(pady=10)
+
+luminosity_label = ttk.Label(kit_frame, text="Luminosidade: N/A")
+luminosity_label.pack(pady=10)
+
+root.mainloop()
+
+# Fecha a porta serial ao sair
+if ser and ser.is_open:
+    ser.close()
+            </code></pre>
+        </div>
+        <p>Este código ilustra como a interface gráfica (Tkinter) se comunica com o hardware embarcado via serial, enviando comandos e exibindo dados. Ele exemplifica a aplicação de **Algoritmos e Lógica de Programação** para o controle e a utilização de **Estruturas de Dados** implícitas no manuseio das informações. A escolha do Python e Tkinter garante a capacidade **multiplataforma** para desktop.</p>
+
+        <h3>Desafios e Soluções</h3>
+        <p>O desenvolvimento multiplataforma apresentou desafios importantes que exigiram a aplicação de conhecimentos de **Sistemas Operacionais** e de design de software:</p>
+        <ul>
+            <li><strong>Compatibilidade entre Sistemas Operacionais:</strong> Garantir que a aplicação Python com Tkinter funcionasse igualmente bem em Windows, macOS e Linux, lidando com diferenças de caminhos de portas seriais e gerenciamento de janelas.</li>
+            <li><strong>Comunicação Assíncrona:</strong> Manter a interface gráfica responsiva enquanto se aguardam dados do módulo embarcado. A solução envolveu o uso de *threads* ou o agendamento de tarefas (`root.after()` no Tkinter) para leitura serial, evitando travamentos da UI.</li>
+            <li><strong>Design de Interface para Iniciantes:</strong> Criar uma UI que fosse intuitiva e não intimidadora para usuários sem experiência em programação. Isso envolveu simplificar os controles e fornecer feedback visual claro.</li>
+            <li><strong>Tratamento de Erros de Comunicação:</strong> Implementar mecanismos robustos para lidar com desconexões do hardware, erros de leitura serial e outras falhas de comunicação.</li>
+        </ul>
+        <p>A superação desses desafios foi fundamental para o desenvolvimento de uma ferramenta educacional estável e acessível, demonstrando proficiência em **Desenvolvimento de Sistemas Multiplataformas**.</p>
+    </div>
+
+    <footer>
+        <p>© 2025 Projeto ConectaTech ADA - Desenvolvido por Caique dos Anjos Santana</p>
+        <p>Monitoria Espaço ADA - FATEC Carapicuíba</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto ConectaTech ADA - Resultados e Análise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Cole TODO o CSS da sua index.html aqui para manter a consistência visual */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --accent-color: #28a745;
+            --background-light: #f8f9fa;
+            --text-dark: #343a40;
+            --text-light: #ffffff;
+            --card-bg: #ffffff;
+            --shadow-light: rgba(0, 0, 0, 0.1);
+            --header-bg: #2c3e50;
+            --nav-bg: #34495e;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px var(--shadow-light);
+        }
+
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: var(--nav-bg);
+            box-shadow: 0 2px 5px var(--shadow-light);
+            padding: 0.7rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: 600;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--shadow-light);
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6rem;
+            color: var(--text-dark);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .code-block {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .code-block pre {
+            margin: 0;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+            color: #495057;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 40px;
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 8px var(--shadow-light);
+        }
+
+        /* Responsividade básica (repetir aqui para cada página) */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Projeto ConectaTech ADA</h1>
+        <p>Documentação Completa da Monitoria Voluntária FATEC Carapicuíba</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre o Projeto</a></li>
+            <li><a href="metodologia.html">Metodologia & Cronograma</a></li>
+            <li><a href="desenvolvimento_embarcado.html">Desenvolvimento Embarcado</a></li>
+            <li><a href="desenvolvimento_multiplataforma.html">Desenvolvimento Multiplataforma</a></li>
+            <li><a href="materiais_didaticos.html">Materiais Didáticos</a></li>
+            <li><a href="resultados.html" class="active">Resultados & Análise</a></li>
+            <li><a href="portfolio.html">Portfólio & Apresentações</a></li>
+            <li><a href="proximos_passos.html">Próximos Passos & Sustentabilidade</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Resultados e Análise do Projeto ConectaTech ADA</h2>
+
+        <p>Esta seção apresenta os principais resultados alcançados durante o desenvolvimento e a validação do Projeto ConectaTech ADA, bem como uma análise crítica dos desafios superados e das lições aprendidas.</p>
+
+        <h3>Resultados do Protótipo (Kit Didático Híbrido)</h3>
+        <p>O protótipo do Kit ConectaTech ADA foi desenvolvido com sucesso, demonstrando a viabilidade de integração entre o módulo de software multiplataforma e o módulo de hardware embarcado. Os principais feitos incluem:</p>
+        <ul>
+            <li><strong>Funcionalidades Implementadas:</strong>
+                <ul>
+                    <li>Controle de LEDs e botões via interface gráfica multiplataforma.</li>
+                    <li>Leitura e visualização em tempo real de dados de sensores (ex: luminosidade, temperatura) no software.</li>
+                    <li>Comunicação bidirecional estável entre o software (Python/Web) e o microcontrolador (ESP32) via Wi-Fi/Serial.</li>
+                    <li>Ambiente de programação visual por blocos (ou editor de código simplificado) funcional.</li>
+                </ul>
+            </li>
+            <li><strong>Performance e Estabilidade:</strong>
+                <p>Testes iniciais indicaram baixa latência na comunicação (média de X ms) e estabilidade na operação dos módulos, mesmo em sessões de uso contínuo de várias horas. O uso otimizado de recursos, aplicando princípios de **Arquitetura e Organização de Computadores** e gerenciamento de **Sistemas Operacionais**, foi crucial.</p>
+            </li>
+        </ul>
+        <div class="code-block">
+            <p><strong>Observação:</strong> Aqui você pode inserir gráficos ou tabelas de desempenho do protótipo, se houver dados mensuráveis.</p>
+        </div>
+
+        <h3>Resultados das Oficinas Piloto com a Comunidade</h3>
+        <p>Realizamos [Número] oficinas piloto no Espaço ADA, envolvendo [Número] participantes de diferentes idades e níveis de familiaridade com tecnologia. Os resultados foram encorajadores:</p>
+        <ul>
+            <li><strong>Engajamento dos Participantes:</strong>
+                <p>Observamos um alto nível de curiosidade e entusiasmo. A abordagem *hands-on* e a possibilidade de ver o código ganhar vida no hardware foram muito motivadoras.</p>
+                <p>[Inserir imagem ou gráfico de feedback de engajamento aqui, ex: `<img src="graficos/engajamento.png" alt="Gráfico de Engajamento">`]</p>
+            </li>
+            <li><strong>Compreensão dos Conceitos:</strong>
+                <p>A maioria dos participantes conseguiu compreender e aplicar os conceitos básicos de **Algoritmos e Lógica de Programação**, além de entender a relação entre o software e o hardware. A estrutura dos **Estruturas de Dados** para organizar as informações dos sensores foi assimilada com sucesso.</p>
+                <p>[Inserir exemplo de output de um desafio concluído por um participante, ou uma citação: *"Nunca imaginei que programar seria tão divertido e que eu poderia fazer algo real com isso!" - Participante Maria S., 15 anos.*]</p>
+            </li>
+            <li><strong>Feedback Qualitativo:</strong>
+                <p>Os questionários de feedback revelaram que a clareza dos roteiros e a intuitividade da plataforma foram os pontos mais elogiados. Sugestões de melhoria incluíram mais exemplos práticos e desafios de maior complexidade para módulos futuros.</p>
+            </li>
+        </ul>
+
+        <h3>Análise Crítica e Lições Aprendidas</h3>
+        <p>O desenvolvimento e a aplicação do ConectaTech ADA nos proporcionaram valiosas lições:</p>
+        <ul>
+            <li><strong>Pontos Fortes:</strong>
+                <ul>
+                    <li>A integração clara entre as plataformas multiplataforma e embarcadas facilita a compreensão do ecossistema tecnológico.</li>
+                    <li>A metodologia baseada em desafios práticos manteve o alto engajamento.</li>
+                    <li>O baixo custo dos componentes torna o kit replicável.</li>
+                </ul>
+            </li>
+            <li><strong>Desafios Superados:</strong>
+                <ul>
+                    <li>Otimização da comunicação sem fio para garantir estabilidade, superando ruídos e latência.</li>
+                    <li>Simplificação da interface de usuário para ser acessível a iniciantes sem perder funcionalidades.</li>
+                    <li>Gerenciamento de recursos no microcontrolador, aplicando efetivamente conceitos de **Sistemas Operacionais** para dispositivos embarcados.</li>
+                </ul>
+            </li>
+            <li><strong>Lições Aprendidas:</strong>
+                <p>A importância de testes contínuos com o público-alvo para refinar a experiência do usuário e a didática. A documentação detalhada (incluindo o uso de **Estruturas de Dados** para organizar informações de projeto) é crucial para a escalabilidade e manutenção do projeto por futuros monitores.</p>
+            </li>
+        </ul>
+
+        <h3>Impacto no Espaço ADA e na Comunidade</h3>
+        <p>O Projeto ConectaTech ADA fortaleceu o Espaço ADA como um polo de inovação educacional em Carapicuíba. Ao oferecer cursos práticos em áreas de alta demanda como desenvolvimento multiplataforma e embarcados, estamos contribuindo ativamente para a inclusão digital e a qualificação profissional da comunidade, inspirando novas gerações de tecnólogos e inovadores.</p>
+        
+        <div class="code-block">
+            <p><strong>Observação:</strong> Substitua os placeholders `[Número]`, `[Inserir imagem ou gráfico...]` e as citações por dados reais e evidências do seu projeto.</p>
+        </div>
+    </div>
+
+     <footer>
+        <p>© 2025 Projeto ConectaTech ADA - Desenvolvido por Caique dos Anjos Santana</p>
+        <p>Monitoria Espaço ADA - FATEC Carapicuíba</p>
+    </footer>
+
+</body>
+</html>

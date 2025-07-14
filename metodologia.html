@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto ConectaTech ADA - Metodologia & Cronograma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Cole TODO o CSS da sua index.html aqui para manter a consistência visual */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --accent-color: #28a745;
+            --background-light: #f8f9fa;
+            --text-dark: #343a40;
+            --text-light: #ffffff;
+            --card-bg: #ffffff;
+            --shadow-light: rgba(0, 0, 0, 0.1);
+            --header-bg: #2c3e50;
+            --nav-bg: #34495e;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px var(--shadow-light);
+        }
+
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: var(--nav-bg);
+            box-shadow: 0 2px 5px var(--shadow-light);
+            padding: 0.7rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: 600;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--shadow-light);
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6rem;
+            color: var(--text-dark);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .code-block {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .code-block pre {
+            margin: 0;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+            color: #495057;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 40px;
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 8px var(--shadow-light);
+        }
+
+        /* Responsividade básica (repetir aqui para cada página) */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Projeto ConectaTech ADA</h1>
+        <p>Documentação Completa da Monitoria Voluntária FATEC Carapicuíba</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre o Projeto</a></li>
+            <li><a href="metodologia.html" class="active">Metodologia & Cronograma</a></li>
+            <li><a href="desenvolvimento_embarcado.html">Desenvolvimento Embarcado</a></li>
+            <li><a href="desenvolvimento_multiplataforma.html">Desenvolvimento Multiplataforma</a></li>
+            <li><a href="materiais_didaticos.html">Materiais Didáticos</a></li>
+            <li><a href="resultados.html">Resultados & Análise</a></li>
+            <li><a href="portfolio.html">Portfólio & Apresentações</a></li>
+            <li><a href="proximos_passos.html">Próximos Passos & Sustentabilidade</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Metodologia e Cronograma do Projeto ConectaTech ADA</h2>
+
+        <p>O desenvolvimento do Projeto ConectaTech ADA segue uma metodologia iterativa e flexível, focada na prototipagem rápida e na validação contínua. Essa abordagem nos permite adaptar-nos a desafios, integrar feedbacks e garantir que os entregáveis sejam relevantes e eficazes. O cronograma abaixo detalha as fases e atividades previstas para o período da monitoria, de agosto a dezembro de 2025.</p>
+
+        <h3>Visão Geral da Metodologia</h3>
+        <p>Adotamos uma abordagem de ciclo de vida do software e hardware baseada em sprints curtos, permitindo que cada etapa seja validada antes de avançar. As principais fases são:</p>
+        <ul>
+            <li><strong>Fase 1: Concepção e Design Pedagógico (Agosto)</strong>
+                <p>Nesta fase inicial, o foco é na pesquisa, no planejamento detalhado do projeto, na definição dos requisitos pedagógicos e na seleção das tecnologias mais adequadas para o kit.</p>
+            </li>
+            <li><strong>Fase 2: Desenvolvimento dos Módulos (Setembro-Outubro)</strong>
+                <p>Momento de "mãos na massa", onde o protótipo do módulo de hardware embarcado e a base do módulo de software multiplataforma são construídos.</p>
+            </li>
+            <li><strong>Fase 3: Integração e Conteúdo Pedagógico (Novembro)</strong>
+                <p>Fase crucial para interligar os módulos de software e hardware, além de desenvolver os roteiros de aula e materiais didáticos.</p>
+            </li>
+            <li><strong>Fase 4: Validação e Compartilhamento (Dezembro)</strong>
+                <p>Realização das oficinas piloto com a comunidade, coleta de feedback, análise de resultados e finalização da documentação e portfólio.</p>
+            </li>
+        </ul>
+        <div class="code-block">
+            <p><strong>Dica:</strong> Se você tiver um diagrama de fluxo ou um mapa mental da sua metodologia, este é o lugar ideal para inseri-lo como uma imagem.</p>
+            </div>
+
+        <h3>Cronograma Detalhado (Agosto - Dezembro de 2025)</h3>
+        <p>Abaixo, o roteiro mês a mês das atividades planejadas, com as principais entregas e foco nas disciplinas FATEC aplicadas.</p>
+
+        <h4>Mês: Agosto - A Faísca Inicial: Pesquisa, Planejamento e Fundamentação</h4>
+        <ul>
+            <li><strong>Atividades Previstas:</strong>
+                <ul>
+                    <li>Reunião de kick-off com a coordenação do Espaço ADA e alinhamento do projeto.</li>
+                    <li>Pesquisa aprofundada sobre metodologias de ensino de programação para iniciantes e kits didáticos existentes.</li>
+                    <li>Definição detalhada do escopo do "Kit Didático ConectaTech" e dos conceitos-chave a serem abordados.</li>
+                    <li>Desenho da arquitetura do sistema (integração entre software e hardware), aplicando conhecimentos de <strong>Arquitetura e Organização de Computadores</strong>.</li>
+                    <li>Seleção definitiva das **Linguagens de Programação** (para firmware e multiplataforma), microcontrolador e componentes iniciais.</li>
+                    <li>Início da documentação técnica e estruturação do portfólio.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Mês: Setembro - Mãos à Obra: Construindo a Base do Kit</h4>
+        <ul>
+            <li><strong>Atividades Previstas:</strong>
+                <ul>
+                    <li>Aquisição dos primeiros componentes de hardware e montagem do protótipo básico do circuito embarcado em protoboard.</li>
+                    <li>Primeiros testes de conectividade e funcionamento de componentes (LEDs, botões), com programação básica do firmware (C/C++ ou MicroPython).</li>
+                    <li>Configuração do ambiente de desenvolvimento para o módulo de software multiplataforma.</li>
+                    <li>Criação da estrutura base da interface de usuário e do ambiente de programação visual/simplificado, aplicando **Algoritmos e Lógica de Programação**.</li>
+                    <li>Início da implementação das **Estruturas de Dados** para organização de dados na plataforma.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Mês: Outubro - Conectando Mundos: Integração e Conteúdo Essencial</h4>
+        <ul>
+            <li><strong>Atividades Previstas:</strong>
+                <ul>
+                    <li>Primeira tentativa de integração entre o módulo de software multiplataforma e o hardware embarcado (ex: software controla LED físico via comunicação).</li>
+                    <li>Depuração e otimização básica da comunicação e lógica de ambos os módulos, utilizando conhecimentos de **Sistemas Operacionais I** para gerenciamento de processos.</li>
+                    <li>Desenvolvimento do roteiro didático e dos desafios práticos para o Módulo 1: "Introdução à Lógica de Programação e Interação com Hardware Básico".</li>
+                    <li>Aprimoramento da interface de usuário da plataforma e adição de funcionalidades para visualização de dados simples.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Mês: Novembro - Expansão e Refinamento: Novos Módulos e Testes Robustos</h4>
+        <ul>
+            <li><strong>Atividades Previstas:</strong>
+                <ul>
+                    <li>Implementação de lógicas mais complexas no firmware embarcado (ex: automação simples baseada em sensor, uso avançado de **Sistemas Operacionais II** para multitarefas).</li>
+                    <li>Testes extensivos de comunicação e estabilidade entre o módulo embarcado e a plataforma multiplataforma.</li>
+                    <li>Criação do roteiro didático e dos desafios práticos para o Módulo 2: "Sensores e Dados - Introdução a Estruturas e Sistemas", com foco em **Estruturas de Dados**.</li>
+                    <li>Preparação de materiais de divulgação e questionários de feedback para as oficinas piloto.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Mês: Dezembro - Colheita e Compartilhamento: Finalização e Impacto Comunitário</h4>
+        <ul>
+            <li><strong>Atividades Previstas:</strong>
+                <ul>
+                    <li>Finalização e revisão de todos os componentes do "Kit Didático ConectaTech" (software, hardware, roteiros didáticos).</li>
+                    <li>Redação final do Relatório Técnico-Pedagógico e organização do material para o portfólio.</li>
+                    <li>Realização de uma ou duas oficinas piloto com a comunidade de Carapicuíba, utilizando o kit.</li>
+                    <li>Coleta e análise de feedback dos participantes das oficinas.</li>
+                    <li>Apresentação final do projeto para a coordenação da FATEC, destacando os resultados e o impacto na democratização da tecnologia.</li>
+                    <li>Entrega oficial de todo o projeto e sua documentação.</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="code-block">
+            <p><strong>Observação:</strong> Este cronograma é um guia. Datas e atividades podem ser ajustadas conforme a realidade e os desafios do desenvolvimento. O importante é documentar as alterações e justificativas.</p>
+        </div>
+    </div>
+
+     <footer>
+        <p>© 2025 Projeto ConectaTech ADA - Desenvolvido por Caique dos Anjos Santana</p>
+        <p>Monitoria Espaço ADA - FATEC Carapicuíba</p>
+    </footer>
+
+</body>
+</html>

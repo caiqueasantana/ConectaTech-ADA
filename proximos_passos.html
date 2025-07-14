@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto ConectaTech ADA - Próximos Passos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Cole TODO o CSS da sua index.html aqui para manter a consistência visual */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --accent-color: #28a745;
+            --background-light: #f8f9fa;
+            --text-dark: #343a40;
+            --text-light: #ffffff;
+            --card-bg: #ffffff;
+            --shadow-light: rgba(0, 0, 0, 0.1);
+            --header-bg: #2c3e50;
+            --nav-bg: #34495e;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px var(--shadow-light);
+        }
+
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: var(--nav-bg);
+            box-shadow: 0 2px 5px var(--shadow-light);
+            padding: 0.7rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: 600;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--shadow-light);
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6rem;
+            color: var(--text-dark);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .code-block {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .code-block pre {
+            margin: 0;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+            color: #495057;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 40px;
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 8px var(--shadow-light);
+        }
+
+        /* Responsividade básica (repetir aqui para cada página) */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Projeto ConectaTech ADA</h1>
+        <p>Documentação Completa da Monitoria Voluntária FATEC Carapicuíba</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre o Projeto</a></li>
+            <li><a href="metodologia.html">Metodologia & Cronograma</a></li>
+            <li><a href="desenvolvimento_embarcado.html">Desenvolvimento Embarcado</a></li>
+            <li><a href="desenvolvimento_multiplataforma.html">Desenvolvimento Multiplataforma</a></li>
+            <li><a href="materiais_didaticos.html">Materiais Didáticos</a></li>
+            <li><a href="resultados.html">Resultados & Análise</a></li>
+            <li><a href="portfolio.html">Portfólio & Apresentações</a></li>
+            <li><a href="proximos_passos.html" class="active">Próximos Passos & Sustentabilidade</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Próximos Passos e Sustentabilidade do Projeto ConectaTech ADA</h2>
+
+        <p>O Projeto ConectaTech ADA, embora concluído em sua fase de prototipagem e validação inicial, possui um vasto potencial para expansão e continuidade. Esta seção detalha a visão de futuro para o kit e a metodologia, bem como estratégias para garantir sua sustentabilidade e impacto a longo prazo.</p>
+
+        <h3>Ideias para Expansão Futura</h3>
+        <p>Para o futuro, visualizamos diversas melhorias e novas funcionalidades que podem enriquecer a experiência do Kit ConectaTech:</p>
+        <ul>
+            <li><strong>Novos Módulos Didáticos:</strong>
+                <ul>
+                    <li>Introdução à Internet das Coisas (IoT) com conexão a plataformas em nuvem (ex: ThingSpeak, Firebase).</li>
+                    <li>Módulos de Robótica Básica com o controle de motores.</li>
+                    <li>Introdução a Banco de Dados para armazenamento de dados de sensores.</li>
+                    <li>Conceitos de Machine Learning/IA para processamento de dados do embarcado.</li>
+                </ul>
+            </li>
+            <li><strong>Aprimoramento do Módulo de Software Multiplataforma:</strong>
+                <ul>
+                    <li>Funcionalidades de "salvar e carregar" projetos do usuário.</li>
+                    <li>Interface de usuário mais rica, com gráficos interativos e painéis de controle personalizados.</li>
+                    <li>Versão mobile do aplicativo para controle via smartphone.</li>
+                    <li>Integração com APIs externas para projetos mais avançados.</li>
+                </ul>
+            </li>
+            <li><strong>Melhorias no Hardware Embarcado:</strong>
+                <ul>
+                    <li>Desenvolvimento de uma Placa de Circuito Impresso (PCB) personalizada para o kit, tornando-o mais robusto e profissional.</li>
+                    <li>Inclusão de novos sensores e atuadores (ex: sensor de som, display OLED, servos).</li>
+                    <li>Opções de alimentação por bateria para maior portabilidade.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Planos de Sustentabilidade</h3>
+        <p>Para garantir que o ConectaTech ADA continue a beneficiar a comunidade da FATEC e de Carapicuíba, propomos as seguintes estratégias:</p>
+        <ul>
+            <li><strong>Formação de Multiplicadores:</strong> Treinamento de novos monitores e alunos da FATEC para que possam conduzir as oficinas e manter o projeto.</li>
+            <li><strong>Manutenção e Atualização Contínuas:</strong> Criação de um calendário para revisão e atualização dos materiais didáticos e do código-fonte do kit.</li>
+            <li><strong>Documentação para Novos Contribuidores:</strong> Uma documentação clara e acessível que facilite a entrada de novos desenvolvedores no projeto.</li>
+            <li><strong>Repositório Aberto:</strong> Manter o código-fonte no GitHub como um projeto de código aberto, incentivando a colaboração da comunidade.</li>
+        </ul>
+
+        <h3>Potencial de Replicação e Colaborações</h3>
+        <p>A metodologia e o Kit ConectaTech ADA foram desenhados para serem escaláveis e replicáveis:</p>
+        <ul>
+            <li><strong>Expansão para Outras FATECs:</strong> O modelo pode ser adaptado e implementado em outras unidades da FATEC, democratizando a tecnologia em diversas regiões.</li>
+            <li><strong>Parcerias com Escolas Locais:</strong> Estabelecer parcerias com escolas de Carapicuíba para levar as oficinas de ConectaTech diretamente para os alunos do ensino fundamental e médio.</li>
+            <li><strong>Colaboração com Iniciativas Comunitárias:</strong> Buscar colaboração com ONGs e associações locais que atuem na área de educação e inclusão social para ampliar o alcance do projeto.</li>
+        </ul>
+
+        <p>Acreditamos que o Projeto ConectaTech ADA pode se tornar um marco na democratização do acesso à tecnologia em Carapicuíba, inspirando novas gerações e capacitando indivíduos para os desafios e oportunidades do futuro digital.</p>
+        
+        <div class="code-block">
+            <p><strong>Observação:</strong> Esta seção é a sua oportunidade de mostrar proatividade e visão de longo prazo para o projeto. As ideias aqui são sugestões, você pode personalizá-las conforme sua criatividade e interesse.</p>
+        </div>
+    </div>
+
+     <footer>
+        <p>© 2025 Projeto ConectaTech ADA - Desenvolvido por Caique dos Anjos Santana</p>
+        <p>Monitoria Espaço ADA - FATEC Carapicuíba</p>
+    </footer>
+
+
+</body>
+</html>

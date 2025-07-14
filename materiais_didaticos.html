@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto ConectaTech ADA - Materiais Didáticos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Cole TODO o CSS da sua index.html aqui para manter a consistência visual */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --accent-color: #28a745;
+            --background-light: #f8f9fa;
+            --text-dark: #343a40;
+            --text-light: #ffffff;
+            --card-bg: #ffffff;
+            --shadow-light: rgba(0, 0, 0, 0.1);
+            --header-bg: #2c3e50;
+            --nav-bg: #34495e;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px var(--shadow-light);
+        }
+
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: var(--nav-bg);
+            box-shadow: 0 2px 5px var(--shadow-light);
+            padding: 0.7rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: 600;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--shadow-light);
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6rem;
+            color: var(--text-dark);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .code-block {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .code-block pre {
+            margin: 0;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+            color: #495057;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 40px;
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 8px var(--shadow-light);
+        }
+
+        /* Responsividade básica (repetir aqui para cada página) */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Projeto ConectaTech ADA</h1>
+        <p>Documentação Completa da Monitoria Voluntária FATEC Carapicuíba</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre o Projeto</a></li>
+            <li><a href="metodologia.html">Metodologia & Cronograma</a></li>
+            <li><a href="desenvolvimento_embarcado.html">Desenvolvimento Embarcado</a></li>
+            <li><a href="desenvolvimento_multiplataforma.html">Desenvolvimento Multiplataforma</a></li>
+            <li><a href="materiais_didaticos.html" class="active">Materiais Didáticos</a></li>
+            <li><a href="resultados.html">Resultados & Análise</a></li>
+            <li><a href="portfolio.html">Portfólio & Apresentações</a></li>
+            <li><a href="proximos_passos.html">Próximos Passos & Sustentabilidade</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Materiais Didáticos e Oficinas</h2>
+
+        <p>Esta seção detalha a metodologia de ensino desenvolvida para o "ConectaTech ADA" e os materiais criados para guiar os participantes em suas primeiras experiências com programação e automação, interligando o software multiplataforma com o hardware embarcado. Nosso objetivo é tornar o aprendizado acessível, prático e divertido.</p>
+
+        <h3>Visão Geral da Metodologia Pedagógica</h3>
+        <p>Adotamos uma abordagem *hands-on* e baseada em projetos, focando na resolução de problemas reais com o uso do Kit ConectaTech. A metodologia é iterativa, permitindo que os alunos construam conhecimentos gradualmente, desde a lógica básica até a interação com o hardware e a visualização de dados. Incentivamos a experimentação e a colaboração.</p>
+
+        <h3>Roteiros de Aula e Módulos de Aprendizado</h3>
+        <p>O conteúdo é dividido em módulos temáticos, cada um com objetivos claros, tópicos abordados e desafios práticos. Abaixo, exemplos dos módulos iniciais:</p>
+
+        <h4>Módulo 1: Primeiros Passos na Lógica e LEDs (Introdução ao Software Multiplataforma)</h4>
+        <ul>
+            <li><strong>Objetivos:</strong> Introduzir conceitos de Algoritmos, Sequência, Seleção e Repetição. Familiarizar com o ambiente de programação visual da plataforma.</li>
+            <li><strong>Tópicos:</strong> O que é um algoritmo, comandos sequenciais, blocos de repetição (loops), blocos condicionais (se/então/senão).</li>
+            <li><strong>Desafio Prático:</strong> "Pisca LED Virtual" - Criar um algoritmo na plataforma para simular o piscar de um LED virtual.</li>
+            <li><strong>Recursos:</strong> Plataforma ConectaTech ADA (Módulo Software), Roteiro de Aula 1.</li>
+        </ul>
+
+        <h4>Módulo 2: O Código Ganha Vida! (Introdução ao Hardware Embarcado)</h4>
+        <ul>
+            <li><strong>Objetivos:</strong> Conectar o software multiplataforma ao hardware embarcado. Entender a comunicação entre eles e controlar um LED físico.</li>
+            <li><strong>Tópicos:</strong> Introdução ao microcontrolador ESP32 (ou similar), GPIOs, comunicação serial (UART), conceitos de entrada e saída digital.</li>
+            <li><strong>Desafio Prático:</strong> "Controle de LED Físico" - Usar a plataforma para ligar e desligar um LED conectado ao Kit ConectaTech, enviando comandos.</li>
+            <li><strong>Recursos:</strong> Kit ConectaTech ADA (Módulo Hardware e Software), Roteiro de Aula 2, Fritzing ou diagrama de montagem do LED.</li>
+        </ul>
+
+        <h4>Módulo 3: Sensores e Dados (Interação e Visualização)</h4>
+        <ul>
+            <li><strong>Objetivos:</strong> Utilizar sensores para coletar dados do ambiente e visualizar essas informações na plataforma multiplataforma.</li>
+            <li><strong>Tópicos:</strong> Tipos de sensores (ex: luminosidade LDR), leitura analógica, envio de dados do embarcado para o software, visualização de dados (gráficos simples). Aplicação de **Estruturas de Dados** para organizar as leituras.</li>
+            <li><strong>Desafio Prático:</strong> "Monitor de Luz Inteligente" - Construir um sistema onde o sensor de luz do Kit ConectaTech envia dados para a plataforma, que exibe a luminosidade atual e acende um LED se estiver escuro.</li>
+            <li><strong>Recursos:</strong> Kit ConectaTech ADA (Módulo Hardware e Software), Roteiro de Aula 3, diagramas de conexão do sensor.</li>
+        </ul>
+
+        <h3>Material de Apoio Complementar</h3>
+        <p>Para cada módulo, desenvolvemos recursos de apoio que facilitam o aprendizado:</p>
+        <ul>
+            <li><strong>Slides de Apresentação:</strong> <a href="#" target="_blank">Download Slides Módulo 1 (PDF)</a> | <a href="#" target="_blank">Download Slides Módulo 2 (PDF)</a> | <a href="#" target="_blank">Download Slides Módulo 3 (PDF)</a></li>
+            <li><strong>Vídeos Tutoriais Curtos:</strong> Demonstrações práticas de montagem e programação. (Link para Playlist no YouTube: <a href="#" target="_blank">Playlist ConectaTech ADA</a>)</li>
+            <li><strong>Códigos de Exemplo:</strong> Repositório com os códigos base para cada desafio. (Link para GitHub: <a href="#" target="_blank">GitHub ConectaTech Examples</a>)</li>
+            <li><strong>Manual de Montagem Simplificado:</strong> <a href="#" target="_blank">Download Manual (PDF)</a></li>
+        </ul>
+
+        <h3>Registro das Oficinas Piloto</h3>
+        <p>Registros visuais e descritivos das oficinas realizadas no Espaço ADA:</p>
+        <ul>
+            <li><strong>Oficina 1: "Desvendando o Código" (Agosto de 2025)</strong>
+                <p>Nesta oficina introdutória, focamos na familiarização com a plataforma de software e os primeiros conceitos de lógica. [Inserir fotos da oficina aqui, ex: `<img src="fotos/oficina1_img1.jpg" alt="Participantes programando">`] </p>
+            </li>
+            <li><strong>Oficina 2: "Conectando o Digital ao Físico" (Setembro de 2025)</strong>
+                <p>A primeira experiência com o hardware, onde os participantes viram seus códigos controlarem componentes reais. [Inserir fotos da oficina aqui, ex: `<img src="fotos/oficina2_img1.jpg" alt="Mãos na massa com o kit">`] </p>
+            </li>
+            </ul>
+        <p>Ver o engajamento dos participantes e a alegria em ver um LED acender por meio do próprio código foi extremamente gratificante, reforçando o valor da nossa metodologia.</p>
+        
+        <div class="code-block">
+            <p><strong>Observação:</strong> Lembre-se de substituir os links para download e as tags `<img>` pelos caminhos reais dos seus arquivos e imagens.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Projeto ConectaTech ADA - Desenvolvido por Caique dos Anjos Santana</p>
+        <p>Monitoria Espaço ADA - FATEC Carapicuíba</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto ConectaTech ADA - Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Cole TODO o CSS da sua index.html aqui para manter a consistência visual */
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --accent-color: #28a745;
+            --background-light: #f8f9fa;
+            --text-dark: #343a40;
+            --text-light: #ffffff;
+            --card-bg: #ffffff;
+            --shadow-light: rgba(0, 0, 0, 0.1);
+            --header-bg: #2c3e50;
+            --nav-bg: #34495e;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            padding: 2.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px var(--shadow-light);
+        }
+
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: var(--nav-bg);
+            box-shadow: 0 2px 5px var(--shadow-light);
+            padding: 0.7rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: 600;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px var(--shadow-light);
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6rem;
+            color: var(--text-dark);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .code-block {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .code-block pre {
+            margin: 0;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+            color: #495057;
+        }
+
+        .portfolio-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fcfcfc;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .portfolio-item h4 {
+            color: var(--accent-color);
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+        .portfolio-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .portfolio-item a:hover {
+            text-decoration: underline;
+        }
+        .portfolio-item img, .portfolio-item video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px var(--shadow-light);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 40px;
+            background-color: var(--header-bg);
+            color: var(--text-light);
+            font-size: 0.9rem;
+            box-shadow: 0 -4px 8px var(--shadow-light);
+        }
+
+        /* Responsividade básica (repetir aqui para cada página) */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Projeto ConectaTech ADA</h1>
+        <p>Documentação Completa da Monitoria Voluntária FATEC Carapicuíba</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre o Projeto</a></li>
+            <li><a href="metodologia.html">Metodologia & Cronograma</a></li>
+            <li><a href="desenvolvimento_embarcado.html">Desenvolvimento Embarcado</a></li>
+            <li><a href="desenvolvimento_multiplataforma.html">Desenvolvimento Multiplataforma</a></li>
+            <li><a href="materiais_didaticos.html">Materiais Didáticos</a></li>
+            <li><a href="resultados.html">Resultados & Análise</a></li>
+            <li><a href="portfolio.html" class="active">Portfólio & Apresentações</a></li>
+            <li><a href="proximos_passos.html">Próximos Passos & Sustentabilidade</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Portfólio e Apresentações do Projeto ConectaTech ADA</h2>
+
+        <p>Esta seção consolida os principais entregáveis e artefatos do Projeto ConectaTech ADA, servindo como um portfólio abrangente das competências desenvolvidas durante a monitoria. Ele demonstra minha capacidade de planejar, desenvolver e implementar soluções tecnológicas com impacto educacional e social.</p>
+
+        <div class="portfolio-item">
+            <h4>1. Relatório Final do Projeto ConectaTech ADA</h4>
+            <p>O documento detalhado que descreve todo o processo do projeto, desde a concepção até os resultados e lições aprendidas. Inclui informações técnicas e pedagógicas.</p>
+            <p><a href="documentos/relatorio_final_conectatech_ada.pdf" target="_blank">Baixar Relatório Final (PDF)</a></p>
+            <img src="imagens/capa_relatorio.png" alt="Capa do Relatório Final do Projeto ConectaTech ADA">
+        </div>
+
+        <div class="portfolio-item">
+            <h4>2. Repositório de Código-Fonte Completo</h4>
+            <p>Acesse o código-fonte completo do Módulo de Software Multiplataforma e do Firmware do Módulo de Hardware Embarcado. O repositório inclui instruções para setup e execução.</p>
+            <p><a href="https://github.com/SeuUsuario/ConectaTechADA" target="_blank">Visitar Repositório GitHub</a></p>
+            <p><strong>Tecnologias Envolvidas:</strong> Python (Multiplataforma), C/C++ (Embarcado), HTML/CSS/JavaScript (se aplicável para web-frontend), Microcontrolador ESP32.</p>
+        </div>
+
+        <div class="portfolio-item">
+            <h4>3. Vídeos Demonstrativos do Kit ConectaTech ADA</h4>
+            <p>Assista aos vídeos que demonstram o Kit ConectaTech ADA em funcionamento, mostrando a interação entre o software e o hardware, e a execução de alguns dos desafios práticos.</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=VIDEO_ID_1" target="_blank">Demo 1: Controle de LED Físico via Software Multiplataforma</a></li>
+                <li><a href="https://www.youtube.com/watch?v=VIDEO_ID_2" target="_blank">Demo 2: Leitura de Sensor e Visualização de Dados</a></li>
+                </ul>
+            <video controls src="videos/demo_kit.mp4" poster="imagens/thumbnail_demo.jpg">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+            <p>*(Substitua "videos/demo_kit.mp4" e "imagens/thumbnail_demo.jpg" pelo caminho real dos seus arquivos de vídeo e miniatura)*</p>
+        </div>
+
+        <div class="portfolio-item">
+            <h4>4. Slides de Apresentação do Projeto</h4>
+            <p>Confira os slides utilizados nas apresentações do projeto para a coordenação da FATEC, professores e outros stakeholders.</p>
+            <p><a href="documentos/apresentacao_final_conectatech.pdf" target="_blank">Visualizar Apresentação Final (PDF)</a></p>
+            </div>
+
+        <div class="portfolio-item">
+            <h4>5. Galeria de Fotos das Oficinas Piloto</h4>
+            <p>Momentos marcantes das oficinas ConectaTech ADA com a comunidade de Carapicuíba.</p>
+            <p><a href="galeria_fotos.html" target="_blank">Ver Galeria Completa de Fotos</a></p>
+            <img src="imagens/oficina_participantes_destaque.jpg" alt="Participantes da Oficina ConectaTech ADA">
+            <p>*(Crie uma `galeria_fotos.html` separada para esta seção ou insira várias imagens aqui diretamente)*</p>
+        </div>
+
+        <div class="code-block">
+            <p><strong>Observação:</strong> Lembre-se de substituir todos os links (`#`, `https://github.com/SeuUsuario/ConectaTechADA`, `VIDEO_ID_1`, etc.) e os caminhos das imagens/vídeos (`imagens/`, `videos/`) pelos seus arquivos reais. Organize seus arquivos em pastas como `documentos/`, `imagens/`, `videos/` para manter a estrutura do site.</p>
+        </div>
+    </div>
+
+     <footer>
+        <p>© 2025 Projeto ConectaTech ADA - Desenvolvido por Caique dos Anjos Santana</p>
+        <p>Monitoria Espaço ADA - FATEC Carapicuíba</p>
+    </footer>
+
+
+</body>
+</html>
